@@ -70,6 +70,9 @@
 	</div>
 	<!-- /.container-fluid --> </nav>
 
+
+
+
 	<div class="container">
 		<div class="well">
 			<strong>List of Persons</strong>
@@ -91,6 +94,9 @@
 		<tag:paginate max="15" offset="${offset}" count="${count}"
 			uri="${pageContext.request.contextPath}/person/list" next="&raquo;" previous="&laquo;" />
 	</div>
+
+
+
 
 
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.js"></script>

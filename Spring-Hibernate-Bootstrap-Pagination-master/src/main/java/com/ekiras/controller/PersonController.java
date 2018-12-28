@@ -17,6 +17,9 @@ public class PersonController {
 
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String list(Model model, Integer offset, Integer maxResults) {
+		System.out.println("offset : " + offset);
+		System.out.println("maxResult : " + maxResults);
+		
 		model.addAttribute("persons", personService.list(offset, maxResults));
 		model.addAttribute("count", personService.count());
 		model.addAttribute("offset", offset);
